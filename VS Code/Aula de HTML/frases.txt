@@ -1,4 +1,9 @@
+<<<<<<< HEAD
+primeira aula de git
+
+=======
 primeira aula de git
 
 
+>>>>>>> 07867293074af696b5e573a3ddd66af1bd12d985
 segunda alteração

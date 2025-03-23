@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 div, span {
     width: 200px;
     height: 100px;
@@ -8,4 +9,16 @@ div, span {
     box-sizing: border-box;
     /* padding: 20px 40px 0 10px; */
     padding: 40px;
+=======
+div, span {
+    width: 200px;
+    height: 100px;
+    border: solid;
+}
+
+.padding {
+    box-sizing: border-box;
+    /* padding: 20px 40px 0 10px; */
+    padding: 40px;
+>>>>>>> 07867293074af696b5e573a3ddd66af1bd12d985
 }
