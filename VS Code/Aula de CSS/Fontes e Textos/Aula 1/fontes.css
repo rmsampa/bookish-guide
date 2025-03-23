@@ -1,0 +1,23 @@
+/* color
+text-transform
+text-decoration */
+
+p{
+    text-transform: lowercase;
+    text-transform: lowercase;
+    text-transform: none;
+}
+
+mark {
+    color: red;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+    text-decoration: red underline;
+    /* text-decoration: underline; */
+    /* text-decoration: overline red; */
+    /* text-decoration: line-through ; */
+
+}
