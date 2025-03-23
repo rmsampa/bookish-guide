@@ -1,0 +1,25 @@
+/* body {
+    background-image: url("file:///C:/Users/Sampa/Desktop/icon169.webp");
+} */
+
+h1 {
+    text-align: center;
+}
+p {
+    font-weight: bold;
+    text-align: center;
+}
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #6062e754;
+        /*background-image: url("file:///C:/Users/Sampa/Desktop/icon169.webp"); */
+    /* background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom; */
+
+    /* background-repeat: no-repeat;
+    background-position: bottom center; */
+    /* background-size: contain; */
+   background: #6062e754 url("file:///C:/Users/Sampa/Desktop/icon169.webp") no-repeat bottom center;
+}
