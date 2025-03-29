@@ -1,0 +1,63 @@
+<?php
+session_start();
+require 'config.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Sanitiza e valida os dados
+    $nome = trim($_POST['nome']);
+    $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
+    $senha = trim($_POST['senha']);
+    $celular = trim($_POST['celular']);
+    
+    // Validações básicas
+    if (empty($nome) || empty($email) || empty($senha) || empty($celular)) {
+        $_SESSION['msg'] = "Por favor, preencha todos os campos!";
+        $_SESSION['msg_type'] = "error";
+        header("Location: index.php");
+        exit;
+    }
+    
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $_SESSION['msg'] = "Por favor, insira um e-mail válido!";
+        $_SESSION['msg_type'] = "error";
+        header("Location: index.php");
+        exit;
+    }
+    
+    // Criptografa a senha
+    $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
+    
+    // Prepara a query SQL
+    $sql = "INSERT INTO pre_registros (nome, email, senha, celular, data_registro) 
+            VALUES (?, ?, ?, ?, GETDATE())";
+    
+    $params = array($nome, $email, $senha_hash, $celular);
+    $stmt = sqlsrv_prepare($conn, $sql, $params);
+    
+    // Executa a query
+    if (sqlsrv_execute($stmt)) {
+        $_SESSION['msg'] = "Pré-registro realizado com sucesso! Você receberá um código de confirmação em breve.";
+        $_SESSION['msg_type'] = "success";
+    } else {
+        $errors = sqlsrv_errors();
+        // Verifica se é erro de duplicação (e-mail já cadastrado)
+        if (strpos($errors[0]['message'], 'UNIQUE KEY') !== false) {
+            $_SESSION['msg'] = "Este e-mail já está cadastrado!";
+        } else {
+            $_SESSION['msg'] = "Erro ao realizar pré-registro. Por favor, tente novamente mais tarde.";
+        }
+        $_SESSION['msg_type'] = "error";
+    }
+    
+    // Fecha a conexão
+    sqlsrv_close($conn);
+    
+    // Redireciona de volta para a página de registro
+    header("Location: index.php");
+    exit;
+} else {
+    // Se alguém tentar acessar diretamente o processa.php
+    header("Location: index.php");
+    exit;
+}
+?>

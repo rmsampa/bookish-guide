@@ -1,0 +1,70 @@
+<?php
+// Inicia a sessão para mensagens de erro/sucesso
+session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pré-Registro - Meu Jogo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-logo">
+            <!-- Adicione sua logo aqui -->
+            <img src="images/logo.png" alt="Logo do Jogo">
+        </div>
+        
+        <div class="register-form">
+            <h1>Pré-Registro</h1>
+            <p>Garanta seus bônus exclusivos no lançamento!</p>
+            
+            <?php if (isset($_SESSION['msg'])): ?>
+                <div class="message <?php echo $_SESSION['msg_type']; ?>">
+                    <?php 
+                    echo $_SESSION['msg'];
+                    unset($_SESSION['msg']);
+                    unset($_SESSION['msg_type']);
+                    ?>
+                </div>
+            <?php endif; ?>
+            
+            <form action="processa.php" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="celular">Celular (WhatsApp)</label>
+                    <input type="tel" id="celular" name="celular" required>
+                </div>
+                
+                <button type="submit" class="register-btn">Confirmar Pré-Registro</button>
+            </form>
+            
+            <div class="benefits">
+                <h3>Bônus de Pré-Registro:</h3>
+                <ul>
+                    <li>Itens exclusivos</li>
+                    <li>Moedas iniciais</li>
+                    <li>Acesso antecipado</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
