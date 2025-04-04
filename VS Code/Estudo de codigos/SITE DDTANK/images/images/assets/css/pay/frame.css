@@ -1,0 +1,422 @@
+@charset "UTF-8";
+
+body {
+    font-family: helvetica neue, luxi sans, dejavu sans, Tahoma, hiragino sans gb, microsoft yahei, wenquanyi micro hei, sans-serif
+}
+
+.frame .head {
+    border-bottom: 3px solid #0b7ebd
+}
+
+.frame .wrap {
+    width: 990px;
+    margin: 0 auto;
+    overflow: hidden
+}
+
+.frame .wrap .title {
+    height: 50px;
+    margin: 14px 0;
+}
+
+.frame .navigator {
+    float: left
+}
+
+.frame .navigator ul {
+    margin: 0
+}
+
+.frame .navigator li {
+    float: left;
+    margin-left: 5px
+}
+
+.frame .navigator li a {
+    position: relative;
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 0 8px;
+    outline: none
+}
+
+.frame .navigator .active {
+    margin-right: 10px
+}
+
+.frame .navigator a.game-on {
+    background: url(../../images/pay/bg-nav-repeat.jpg) repeat-x 0 0
+}
+
+.frame .navigator a.game-off {
+    background: url(../../images/pay/bg-nav-inactive-repeat.jpg) repeat-x 0 0
+}
+
+.frame .navigator li a .btn-border {
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    height: 100%;
+    width: 5px;
+    background: url(../../images/pay/bg-nav2.png?3) no-repeat 0 0
+}
+
+.frame .navigator a.game-on .btn-border-left {
+    left: -5px;
+    background-position: -125px -34px
+}
+
+.frame .navigator a.game-on .btn-border-right {
+    right: -5px;
+    background-position: -287px -34px
+}
+
+.frame .navigator a.game-off .btn-border-left {
+    left: -5px;
+    background-position: -125px 0
+}
+
+.frame .navigator a.game-off .btn-border-right {
+    right: -5px;
+    background-position: -287px 0
+}
+
+.frame .navigator li a:hover {
+    text-decoration: none
+}
+
+.frame .navigator li .game-off {
+    color: #28669b
+}
+
+.frame .select-game {
+    float: right
+}
+
+.frame .select-game .sele-desc {
+    display: inline-block;
+    width: 125px;
+    height: 25px;
+    border: 1px solid #d7d7d7;
+    line-height: 22px;
+    line-height: 24px\9;
+    cursor: pointer;
+    background: url(../../images/pay/bg-nav.png) no-repeat 4px -24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.frame .select-game .drop-arrow {
+    background-position: 4px 0
+}
+
+.frame .select-game img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    margin: 0 5px
+}
+
+.frame .select-game-dropdown {
+    position: absolute;
+    width: 482px;
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    margin: 26px 0 0 506px;
+    *margin: 26px0px0px202px;
+    _margin: 26px 0 0 197px;
+    display: none;
+    z-index: 999
+}
+
+.frame .dropdown {
+    width: 472px;
+    margin: 0 auto;
+    padding: 5px 0
+}
+
+.frame .notopborder {
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    width: 125px;
+    height: 1px;
+    background: #fff
+}
+
+.frame .dropdown ul {
+    margin: 0 5px
+}
+
+.frame .dropdown li {
+    float: left;
+    width: 147px;
+    margin-right: 3px;
+    margin-left: 3px
+}
+
+.frame .dropdown li:hover {
+    background-color: #f5f5f5
+}
+
+.frame .dropdown li a:hover {
+    _color: #a5a5a5;
+    _text-decoration: underline;
+    text-decoration: none
+}
+
+.frame .dropdown li a {
+    display: inline-block;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    color: #000
+}
+
+.frame .dropdown li a img {
+    display: inline-block;
+    vertical-align: -3px;
+    margin: 0 5px 0 6px;
+    width: 16px;
+    height: 16px
+}
+
+.frame .pay-container .layout-content {
+    width: 778px;
+    float: left
+}
+
+.frame .pay-container .layout-sidebar {
+    float: left;
+    min-height: 400px
+}
+
+.frame .pay-container {
+    margin-top: 10px;
+    height: 700px;
+}
+
+.frame .pay-container .wrap-border {
+    border: 1px solid #e5e5e5
+}
+
+.frame .layout-sidebar {
+    width: 211px;
+    background-color: #f6f6f6
+}
+
+.frame .sidebar-padding {
+    width: 188px;
+    margin: 0 auto
+}
+
+.frame .game-icon img {
+    width: 188px;
+    height: 140px;
+    padding: 12px 0 12px;
+    border-radius: 6px;
+    border-bottom: 1px solid #e3e3e3
+}
+
+.frame .sidebar-padding .price {
+    line-height: 24px;
+    color: #666;
+    font-size: 14px;
+    padding-top: 5px;
+    text-align: center
+}
+
+.frame .sidebar-padding .introduction {
+    color: #999;
+    font-size: 14px;
+    text-align: left;
+    line-height: 24px
+}
+
+.frame .sidebar-padding .clause {
+    padding: 30px 0 15px;
+    border-bottom: 1px solid #e3e3e3
+}
+
+.frame .sidebar-padding .icon-select {
+    background-position: -16px 0
+}
+
+.frame .sidebar-padding .normal-agree {
+    color: #555;
+    margin: 0 4px
+}
+
+.frame .sidebar-padding .game-agree {
+    color: #0b5ba5
+}
+
+.frame .sidebar-padding .game-agree:hover {
+    color: #fa7c00;
+    text-decoration: underline
+}
+
+.frame .layout-content-wrap {
+    margin: 20px 20px 15px
+}
+
+.frame .layout-content .layout-group {
+    margin-bottom: 10px
+}
+
+.frame .layout-content .left-label {
+    float: left;
+    width: 20%;
+    text-align: left;
+    padding-top: 11px
+}
+
+.frame .layout-content .right-wrapper {
+    float: left
+}
+
+.frame .layout-content .right-wrapper .input-user {
+    width: 230px;
+    height: 34px;
+    line-height: 34px;
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #d4d4d4;
+    color: #555;
+    margin-right: 15px;
+    outline: none;
+    border-radius: 0;
+    box-shadow: none
+}
+
+.frame .layout-content .right-wrapper .select-text {
+    position: relative;
+    display: inline-block;
+    width: 232px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #d4d4d4;
+    padding-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    background-color: #fff
+}
+
+.frame .layout-content .right-wrapper .btn-icon {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-image: -moz-linear-gradient(center top, #ffffff, #e6e6e6);
+    background-image: -webkit-linear-gradient(top, #fff, #e6e6e6);
+    background-repeat: repeat-x;
+    background-color: #f5f5f5;
+    border-color: transparent transparent transparent #d4d4d4;
+    border-style: solid;
+    border-width: 1px;
+    border: 1px solid #e6e6e6\9;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .2) inset, 0 1px 2px rgba(0, 0, 0, .05);
+    color: #333;
+    outline: none;
+    cursor: pointer
+}
+
+.frame .layout-content .right-wrapper .btn-arrow {
+    position: absolute;
+    top: 18px;
+    left: 17px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border-width: 4px;
+    display: inline-block;
+    border-color: #000 transparent transparent;
+    border-image: none;
+    border-style: solid dashed dashed;
+    content: ""
+}
+
+.frame .layout-content .select-append {
+    position: relative;
+    float: left;
+    margin-right: 15px
+}
+
+.frame .layout-content .drop-down-menu {
+    position: absolute;
+    top: 41px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #d4d4d4;
+    padding: 2px 0;
+    z-index: 1000;
+    display: none
+}
+
+.frame .layout-content .drop-down-menu ul {
+    margin: 0;
+    padding: 0;
+    max-height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.frame .layout-content .drop-down-menu li {
+    width: 98%;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+
+.frame .layout-content .drop-down-menu li a {
+    color: #555;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: 10px;
+    font-size: 13px
+}
+
+.frame .layout-content .drop-down-menu li a:hover {
+    background-color: #eee;
+    text-decoration: none
+}
+
+.frame .layout-content .drop-down-menu-wide {
+    width: 357px
+}
+
+.frame .layout-content .drop-down-menu-wide-tri {
+    width: 537px
+}
+
+.frame .layout-content .drop-down-menu-wide li {
+    float: left;
+    width: 50%
+}
+
+.frame .layout-content .drop-down-menu-wide-tri li {
+    float: left;
+    width: 33%
+}
+
+.no-server,
+.no-users,
+.no-packages {
+    margin: 10px;
+}

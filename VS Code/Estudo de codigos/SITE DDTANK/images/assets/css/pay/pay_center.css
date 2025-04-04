@@ -1,0 +1,809 @@
+#payelex-root .form-horizontal .controls {
+    margin-left: 90px
+}
+
+#payelex-root .form-horizontal .control-label {
+    width: 70px
+}
+
+#payelex-root ul {
+    margin: 0
+}
+
+#payelex-root .payelex-loading {
+    background: url(../img/ajaxloading.gif) center no-repeat;
+    height: 100%;
+    align: center;
+    vertical-align: middle;
+    text-align: center
+}
+
+#payelex-root .nav-tabs {
+    margin-bottom: 0;
+    margin-right: -2px;
+    width: 100%
+}
+
+#payelex-root .tab-pane-list {
+    display: inline-block;
+    margin: 0 auto;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    color: #6d6d6d
+}
+
+#payelex-root .tab-pane .exchange-rate {
+    text-align: center;
+    font-size: 18px
+}
+
+#payelex-root .well {
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    background-color: #fff
+}
+
+#payelex-root .tab-pane-list .payelex-item {
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+    width: 143px;
+    height: 66px;
+    line-height: 66px;
+    font-size: 16px;
+    text-align: center;
+    float: left;
+    list-style: none;
+    background-color: #f8f8f8;
+    position: relative
+}
+
+#payelex-root .tab-content {
+    margin: 0 auto;
+    overflow: hidden
+}
+
+#payelex-root .tab-pane {
+    margin-top: 22px
+}
+
+#payelex-root .tab-pane-indicate {
+    color: #7d7d7d;
+    font-size: 14px;
+    line-height: 40px;
+    margin-left: 14px
+}
+
+#payelex-root .tab-pane-ingot-number,
+#payelex-root .tab-pane-add-instruction a {
+    color: #198cef
+}
+
+#payelex-root .tab-pane-add-instruction {
+    font-size: 12px
+}
+
+#payelex-root .pay-amount-indicate {
+    font-size: 14px;
+    color: #7d7d7d;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    background-color: #eef6dd;
+    border: 1px solid #d9e0ca;
+    height: 33px;
+    line-height: 33px;
+    text-indent: 13px
+}
+
+#payelex-root .pay-amount-indicate span {
+    color: #198cef
+}
+
+#payelex-root .payelex-item-hover {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 141px;
+    height: 64px;
+    border: 2px solid transparent
+}
+
+#payelex-root .payelex-item:hover .payelex-item-hover {
+    border: 2px solid #0d7de5
+}
+
+#payelex-root .payelex-form {
+    width: 721px
+}
+
+#payelex-root .payelex-form .channel-selector {
+    margin-bottom: 18px
+}
+
+#payelex-root .payelex-form .desc {
+    margin-bottom: 13px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #d8dce5
+}
+
+#payelex-root .payelex-form .desc img {
+    border: 1px solid #ccc;
+    margin: 4px 8px 4px 0
+}
+
+#payelex-root .channel-selector .tip {
+    display: inline-block;
+    margin-right: 10px;
+    display: none
+}
+
+#payelex-root .channel-selector .channels {
+    display: inline-block;
+    width: 100%
+}
+
+#payelex-root .payelex-form .channel-choosen .controls img {
+    border: 1px solid #ccc;
+    height: 26px;
+    margin-right: -4px
+}
+
+#payelex-root .payelex-form .dropdown-toggle .caret {
+    margin-top: 10px;
+    margin-left: 5px
+}
+
+#payelex-root .channels.open .caret {
+    opacity: 1
+}
+
+#payelex-root .channels.open .channel-logos {
+    display: block
+}
+
+#payelex-root .channel-choosen-logo {
+    display: none
+}
+
+#payelex-root .channel-choosen-logo.active {
+    display: inline-block;
+    zoom: 1;
+    *display: inline
+}
+
+#payelex-root .channel-packages {
+    transition: height .5s ease;
+    -webkit-transition: height .5s ease;
+    -moz-transition: height .5s ease;
+    -ms-transition: height .5s ease;
+    -o-transition: height .5s ease;
+    overflow: hidden
+}
+
+#payelex-root .payelex-form .channel-item {
+    width: 111px;
+    float: left;
+    list-style-type: none;
+    margin: 2px 9px 3px 0;
+    position: relative
+}
+
+#payelex-root .payelex-form .channel-item .img-inner-selected {
+    display: none
+}
+
+#payelex-root .payelex-form .channel-item.active .img-inner-selected {
+    display: block
+}
+
+#payelex-root .img-inner-hover,
+#payelex-root .img-inner-selected {
+    position: absolute
+}
+
+#payelex-root .img-inner-hover {
+    width: 102px;
+    height: 45px;
+    border: 2px solid transparent;
+    top: 0;
+    left: 3px
+}
+
+#payelex-root .channel-item:hover .img-inner-hover {
+    border: 2px solid #0d7de5
+}
+
+#payelex-root .img-inner-selected {
+    width: 105px;
+    height: 49px;
+    top: 0;
+    left: 3px;
+    display: none
+}
+
+#payelex-root .payelex-form .channel-item label {
+    text-align: center;
+    font-size: 12px;
+    font-family: trebuchet ms;
+    color: #555;
+    margin-top: 3px
+}
+
+#payelex-root .payelex-form label.error {
+    color: #d00000;
+    display: inline;
+    margin-left: 10px
+}
+
+#payelex-root .payelex-form .channel-fields {
+    width: 588px;
+    margin: auto
+}
+
+#payelex-root .payelex-box {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3));
+    background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3));
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3));
+    background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.3));
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 945px;
+    padding: 1px
+}
+
+#payelex-root .payelex-form .dropdown-toggle {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    display: none
+}
+
+#payelex-root .payelex-form .dropdown-toggle .caret-large {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #000;
+    margin-right: 4px
+}
+
+#payelex-root .payelex-mainbody {
+    margin: 0 auto;
+    float: none
+}
+
+#payelex-root .user-form {
+    margin: 10px 50px
+}
+
+#payelex-root .user-form label.error {
+    color: #d00000;
+    margin-left: 140px;
+    display: block;
+    width: 100%
+}
+
+#payelex-root .user-form-div {
+    margin-top: 10px
+}
+
+#payelex-root .user-form-div .btn {
+    margin: 10px
+}
+
+#payelex-root .user-form-div label {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    width: 140px;
+    font-size: 14px;
+    line-height: 30px
+}
+
+#payelex-root .user-form-action {
+    margin-left: 64%
+}
+
+#payelex-root .user-form-action #user_cancel {
+    cursor: pointer
+}
+
+#payelex-root .user-form-div input[type=text],
+.user-form-div input[type=password],
+.user-form-div select {
+    font-size: 15px;
+    font-size: 15px;
+    padding: 7px;
+    width: 300px;
+    border-radius: 0
+}
+
+#payelex-root .user-form-div select {
+    height: 35px;
+    line-height: 35px;
+    width: 314px;
+    border-radius: 0
+}
+
+#payelex-root .payelex-submit button {
+    margin-bottom: 9px;
+    font-size: 24px;
+    font-weight: 700;
+    height: 55px;
+    -moz-box-sizing: border-box;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    width: 258px;
+    margin: auto;
+    margin-bottom: 10px
+}
+
+#payelex-root .payelex-submit button.btn-pay {
+    color: #fff;
+    background-color: #4879ce;
+    background: -moz-linear-gradient(top, #4ac7f9, #4ac7f9 40%, #4976cb);
+    background: -webkit-linear-gradient(top, #4ac7f9, #4ac7f9 40%, #4976cb);
+    background: -o-linear-gradient(top, #4ac7f9, #4ac7f9 40%, #4976cb);
+    border: 1px solid #4ac7f9
+}
+
+#payelex-root .payelex-submit button.btn-pay:hover {
+    background-color: #2a8ef2;
+    background: -moz-linear-gradient(top, #2a8ef2, #2a8ef2 40%, #3a5ec1);
+    background: -webkit-linear-gradient(top, #2a8ef2, #2a8ef2 40%, #3a5ec1);
+    background: -o-linear-gradient(top, #2a8ef2, #2a8ef2 40%, #3a5ec1)
+}
+
+#payelex-root .payelex-submit button.disabled-btn,
+#payelex-root .payelex-submit button.disabled-btn:hover {
+    color: #2f2f2f;
+    font-weight: 400;
+    background-color: #efefef;
+    background: -moz-linear-gradient(top, #efefef, #efefef 40%, #d9d9d9);
+    background: -webkit-linear-gradient(top, #efefef, #efefef 40%, #d9d9d9);
+    background: -o-linear-gradient(top, #efefef, #efefef 40%, #d9d9d9);
+    border: 1px solid #f1f1f1
+}
+
+#payelex-root .payelex-footer {
+    border-top: 1px solid #d8dce5;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    font-weight: 500;
+    #height: 37px;
+    #margin-bottom: -10px;
+    line-height: 30px;
+    overflow: hidden;
+    padding: 0
+}
+
+#payelex-root .payelex-footer span:before {
+    background-image: url(../img/icon_lock.png);
+    background-size: 18px 19px;
+    content: "";
+    display: inline-block;
+    height: 19px;
+    left: -7px;
+    position: relative;
+    top: 6px;
+    width: 18px
+}
+
+#payelex-root .payelex-footer span {
+    color: #333;
+    font-size: 11px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fff
+}
+
+#payelex-root #payelex_confirm {
+    margin: 20px;
+    line-height: 20px
+}
+
+#payelex-root #payelex_confirm .table {
+    margin: 0;
+    line-height: 14px
+}
+
+#payelex-root #payelex_confirm .table td {
+    padding: 2px
+}
+
+#payelex-root #payelex_confirm h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px
+}
+
+#payelex-root #payelex_confirm #title {
+    height: 70px;
+    display: table;
+    width: 100%
+}
+
+#payelex-root #payelex_confirm #title h2 {
+    font-size: 18px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center
+}
+
+#payelex-root #payelex_confirm p {
+    margin-top: 5px
+}
+
+#payelex-root #payelex_confirm .confirm-info {
+    float: right;
+    margin-top: 5px
+}
+
+#payelex-root .payelex-item .activity {
+    font: 15px arial, sans-serif;
+    color: #08c;
+    width: auto;
+    margin: auto;
+    font-size: 15px;
+    text-align: left
+}
+
+#payelex-root .payment-closed {
+    border: 3px #28c solid;
+    margin: 15px 0
+}
+
+#payelex-root .payment-closed header {
+    padding: 20px 30px 25px;
+    height: 170px;
+    position: relative;
+    text-align: left
+}
+
+#payelex-root .payment-closed section {
+    padding: 25px 30px 15px
+}
+
+#payelex-root .payment-closed .close-title {
+    text-align: left;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%;
+    width: auto;
+    margin-left: 20px;
+    padding: 15px 10px 8px;
+    color: #bbb;
+    display: inline-block;
+    margin-top: 24px
+}
+
+#payelex-root .payment-closed .close-sign {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 44px
+}
+
+#payelex-root .payment-closed .closed-info {
+    font-size: 18px;
+    text-align: left;
+    line-height: 100%;
+    color: #205184;
+    height: 100%;
+    font-weight: 700;
+    background-color: #b7d5ee
+}
+
+#payelex-root .payment-closed .close-image {
+    vertical-align: middle;
+    text-align: center
+}
+
+#payelex-root .payment-closed .close-face {
+    float: right;
+    width: 190px;
+    position: absolute;
+    right: 15px;
+    top: 15px
+}
+
+#payelex-root .payment-closed .close-title p,
+.payment-closed .closed-info p {
+    margin-bottom: 9px
+}
+
+#country-select .cl-select {
+    font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+    height: 24px;
+    padding: 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    -ms-box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    -o-box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    -webkit-touch-callout: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    color: #5a6770;
+    text-shadow: #fff 0 1px 0;
+    border: 1px solid transparent;
+    border-color: #d1d6d9
+}
+
+#country-select .cl-select span {
+    background: #f8f9fb;
+    background: 0 0;
+    background: -webkit-linear-gradient(#f8f9fb, #e9ebee);
+    background: -moz-linear-gradient(#f8f9fb, #e9ebee);
+    background: -ms-linear-gradient(#f8f9fb, #e9ebee);
+    background: -o-linear-gradient(#f8f9fb, #e9ebee);
+    background: linear-gradient(#f8f9fb, #e9ebee);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    height: 25px;
+    position: relative;
+    padding-left: 37px;
+    padding-right: 26px;
+    display: block
+}
+
+#country-select .cl-select span img {
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    height: 15px
+}
+
+#country-select .cl-select span strong {
+    line-height: 25px;
+    font-size: 12px
+}
+
+#country-select .cl-select span::after {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 12px;
+    top: 7px;
+    right: 8px;
+    background-image: url(http://p.img.elex-tech.us/pay/icon/arrows.png);
+    background-size: 100% 100%
+}
+
+#country-select .cl-selector {
+    text-align: center;
+    display: inline-block;
+    background: #fff;
+    background: 0 0;
+    background: -webkit-linear-gradient(#fff, #ecf0f4);
+    background: -moz-linear-gradient(#fff, #ecf0f4);
+    background: -ms-linear-gradient(#fff, #ecf0f4);
+    background: -o-linear-gradient(#fff, #ecf0f4);
+    background: linear-gradient(#fff, #ecf0f4);
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .3), 0 3px 8px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, .3), 0 3px 8px rgba(0, 0, 0, .3);
+    -ms-box-shadow: 0 0 2px rgba(0, 0, 0, .3), 0 3px 8px rgba(0, 0, 0, .3);
+    -o-box-shadow: 0 0 2px rgba(0, 0, 0, .3), 0 3px 8px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 2px rgba(0, 0, 0, .3), 0 3px 8px rgba(0, 0, 0, .3);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    text-shadow: 0 1px 0 #fff;
+    font-size: 14px;
+    position: absolute;
+    top: 37px;
+    right: -11px
+}
+
+#country-select .cl-selector .arrow {
+    width: 26px;
+    height: 17px;
+    background: url(http://p.img.elex-tech.us/pay/icon/arrow.png);
+    position: absolute;
+    right: 72px;
+    top: -17px
+}
+
+#country-select .cl-selector h4 {
+    padding: 15px;
+    position: relative;
+    font-weight: 700;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px
+}
+
+#country-select .cl-selector h4::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: -1px;
+    height: 1px;
+    background: 0 0;
+    background: -webkit-linear-gradient(left, rgba(214, 222, 226, 0), #d6dee2, rgba(214, 222, 226, 0));
+    background: -moz-linear-gradient(left, rgba(214, 222, 226, 0), #d6dee2, rgba(214, 222, 226, 0));
+    background: -ms-linear-gradient(left, rgba(214, 222, 226, 0), #d6dee2, rgba(214, 222, 226, 0));
+    background: -o-linear-gradient(left, rgba(214, 222, 226, 0), #d6dee2, rgba(214, 222, 226, 0));
+    background: linear-gradient(left, rgba(214, 222, 226, 0), #d6dee2, rgba(214, 222, 226, 0))
+}
+
+#country-select .cl-selector .cl-list {
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+    width: 230px
+}
+
+#country-select .cl-selector .cl-list li {
+    text-shadow: 0 1px 0 #fff;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: left
+}
+
+#country-select .cl-selector .cl-list li a {
+    padding-left: 51px;
+    line-height: 38px;
+    height: 38px;
+    border: 1px solid transparent;
+    display: block;
+    position: relative;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    color: #5a6770;
+    text-shadow: #fff 0 1px 0
+}
+
+#country-select .cl-selector .cl-list li a:hover {
+    background-color: #eceff2;
+    border-color: #d1d6d9
+}
+
+#country-select .cl-selector .cl-list li a img {
+    position: absolute;
+    left: 7px;
+    top: 8px;
+    width: 34px
+}
+
+#country-select .cl-selected {
+    background-image: url(http://p.img.elex-tech.us/pay/icon/selected.png);
+    background-size: 16px 17px;
+    background-position: 204px 50%;
+    background-repeat: no-repeat
+}
+
+#country-select a {
+    text-decoration: none
+}
+
+#modal_back {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -100;
+    opacity: 0;
+    background: 0 0;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.3));
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.3));
+    background: -ms-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.3));
+    background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.3));
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.3))
+}
+
+#payelex-root .payelex-item .gift-package-indicate {
+    background: url(../img/icon-gift.png) no-repeat left top;
+    display: inline-block;
+    color: #ff8a00;
+    width: 13px;
+    height: 15px;
+    margin-right: 4px
+}
+
+#payelex-root .payelex-item.active .gift-package-indicate {
+    background-position: 0 -15px
+}
+
+#payelex-root .channel-item-list {
+    margin: 0 auto
+}
+
+#payelex-root .payelex-item.active {
+    background: url(../img/pay/hover.jpg) no-repeat top left;
+    color: #fff
+}
+
+#payelex-root .clearfix:after {
+    content: '';
+    display: table;
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+    clear: both
+}
+
+#payelex-root .clearfix {
+    *zoom: 1
+}
+
+#tab-more-panel {
+    width: 105px;
+    margin: 0 auto
+}
+
+#payelex-root .tab-payelex-canal-more {
+    position: absolute;
+    width: 105px;
+    height: 47px;
+    text-align: center;
+    line-height: 49px;
+    color: #7e7e7e;
+    cursor: pointer;
+    font-size: 15px;
+    border: 1px solid #d9d9d9;
+    z-index: 11;
+    background-color: #f2f2f2
+}
+
+#payelex-root #tab-more-panel:hover .tab-payelex-canal-more,
+#payelex-root .more-inner-hover:hover {
+    border-bottom: none
+}
+
+#payelex-root .more-inner-hover {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    border: 2px solid transparent;
+    width: 104px;
+    height: 46px
+}
+
+#payelex-root .tab-payelex-canal-more span {
+    font-size: 13px
+}
+
+#payelex-root .tab-payelex-canal-content {
+    position: absolute;
+    top: 46px;
+    border: 1px solid #d9d9d9;
+    font-size: 13px;
+    color: #555;
+    padding: 10px 0;
+    right: 0;
+    z-index: 10;
+    background-color: #f2f2f2;
+    display: none
+}
+
+#payelex-root .tab-payelex-canal-content label {
+    width: 170px
+}
+
+#payelex-root .tab-payelex-canal-content input {
+    margin-left: 15px;
+    margin-right: 5px
+}
