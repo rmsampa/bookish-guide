@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 8px;
+
+  /* align-content: space-between; */
+  /* justify-content: space-around; */
+  /* place-content: space-around;*/
+
+  align-items: stretch; /*SEMPRE EIXO Y*/
+  justify-items: stretch; /*SEMPRE EIXO X*/
+  place-items: stretch; /*SEMPRE EIXO X e Y*/
+
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.grid > div {
+  background-color: cornflowerblue;
+}
+
+.grid div:nth-child(2) {
+  align-self: end;
+  justify-self: start;
+  /* place-content: center;  eixo Y E X  dos itens*/
+}
