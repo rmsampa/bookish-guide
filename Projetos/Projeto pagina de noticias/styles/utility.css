@@ -39,20 +39,11 @@ h1, h2, h3 {
   font: inherit;
 }
 
-img {
-  max-width: 100%;
-}
-
 .container {
   max-width: 1280px;
   margin-inline: auto;
   padding-inline: 32px;
 }
-
-main {
-  margin-top: 40px;
-}
-  
 
 /* utility-first*/
 .grid {
@@ -62,3 +53,12 @@ main {
 .grid-flow-col {
   grid-auto-flow: column;
 }
+
+.grid-col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
