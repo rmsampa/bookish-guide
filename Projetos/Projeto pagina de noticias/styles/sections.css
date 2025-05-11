@@ -3,19 +3,19 @@ section header {
   padding-block: 12px 24px;
   font: var(--text-span);
 
-  a {
+a {
     justify-content: end;
     align-items: center;
     gap: 8px;
 
     span {
-      background-image: url(../assets/icons/arrow-right.svg);
-      width: 16px;
-      height: 16px;
+      background-image: url(../assets/icons/ArrowRigth.svg);
+      width: 6px;
+      height: 6px;
     }
 
     &:hover span {
-      background-image: url(../assets/icons/arrow-right-hover.svg);
+      background-image: url(../assets/icons/ArrowRight-hover.svg);
     }
   }
 }
@@ -30,7 +30,6 @@ section header {
 }
 
 #weekly {
-
   &>div {
     grid-template-columns: repeat(4, 292px);
   }
@@ -46,6 +45,7 @@ section header {
       top: 8px;
       left: 8px;
     }
+
     p {
       margin-top: 8px;
       font-weight: 800;
@@ -84,6 +84,9 @@ section header {
     }
   }
 }
+
+  
+  
    
 
 

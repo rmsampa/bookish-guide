@@ -56,13 +56,13 @@ main {
   
 
 /* utility-first*/
-.grid {
+/* .grid {
   display: grid;
 }
 
 .grid-flow-col {
   grid-auto-flow: column;
-}
+} */
 
 .content-tag {
   display: inline-block;
