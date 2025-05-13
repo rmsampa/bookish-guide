@@ -1,5 +1,5 @@
 section header {
-  border-top: 1px solid var(--strake-color);
+  border-top: 1px solid var(--stroke-color);
   padding-block: 12px 24px;
   font: var(--text-span);
   
@@ -102,8 +102,28 @@ span {
 
 aside{
   grid-area: aside;
-
 }
+
+#more {
+  margin-top: 32px;
+
+  h3{
+  margin-top:8px;
+}
+
+  img {
+    width: 72px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+}
+
+#ai article > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 
   
   
